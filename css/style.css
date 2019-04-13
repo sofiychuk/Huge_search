@@ -1,0 +1,124 @@
+body {
+    background: #f1f1f1;
+    margin: 0px;
+}
+
+.hugesearch_main {
+    box-sizing: border-box;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hugesearch_content h2 {
+    color: #c2c2c2;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 800;
+    line-height: normal;
+    font-family: Arial, sans-serif;
+}
+
+.hugesearch_form {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.hugesearch_input {
+    width: calc(100% - 74px);
+    font-weight: 700;
+    border: none;
+    background: transparent;
+    font-size: 75px;
+    color: #ec5a62;
+    margin: 3% 0;
+    outline: none;
+    line-height: normal;
+}
+
+input[type="search"]::placeholder {
+    color: #c2c2c2;
+}
+
+input[type='search']::-webkit-search-decoration,
+input[type='search']::-webkit-search-cancel-button,
+input[type='search']::-webkit-search-results-button,
+input[type='search']::-webkit-search-results-decoration {
+    display: none;
+}
+
+.button_search {
+    background: url(../favicon.png) transparent no-repeat 100% 100%;
+    width: 70px;
+    height: 70px;
+    background-size: 80%;
+    padding-top: 15px;
+    border: 0;
+    cursor: pointer;
+    outline: none;
+}
+.column {
+    display: inline-block;
+    width: 28%;
+}
+
+.column:nth-child(2) {
+    margin: 0 7%;
+}
+
+.hugesearch_list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.hugesearch_list a {
+    width: 100%;
+    display: block;
+    cursor: pointer;
+    background: rgba(118, 117, 128, 0.05);
+    border-radius: 5px;
+    text-decoration: none;
+    height: 37px;
+    margin-bottom: 1.2%;
+    padding: 3.5%;
+}
+
+.hugesearch_list img {
+    display: inline-block;
+    vertical-align: middle;
+    width: 40px;
+    margin-right: 10px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border: 0;
+}
+
+.hugesearch_list.people img {
+    border-radius: 50%;
+}
+
+.hugesearch_list p {
+    display: inline-block;
+    vertical-align: middle;
+    width: calc(100% - 70px);
+    font-weight: 900;
+    margin: 0;
+    color: #c2c2c2;
+    font-size: 13px;
+}
+
+.hugesearch_list a:hover {
+    background: rgba(118, 117, 128, 0.1);
+}
+
+.hugesearch_list a:hover p {
+    color: #ec5a62;
+}
+.button_search:hover{
+    transform: scale(1.15);
+    transition: transform .5s;
+}
